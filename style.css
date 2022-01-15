@@ -5,38 +5,24 @@ body {
     font-family: roboto-regular, sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex=start;
-}
-
-ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    column-gap: 16px;
-    margin: 0;
-    padding: 0;
-}
-
-a,
-.awesome p {
-    text-decoration: none;
-    font-size: 18px;
-    color: #E5E7EB;
-    margin: 0;
 }
 
 .level1 {
     background-color: #1F2937;
     display: flex;
     flex-direction: column;
-    gap: 80px;
     margin: 0;
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-top: 10px;
-    padding-bottom: 100px;
+    padding: 10px 150px 100px 150px;
     color: #E5E7EB;
+}
+
+.level1 .upper {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin-bottom: 80px;
+    padding-top: 10px;
 }
 
 .level1 .logo {
@@ -47,27 +33,50 @@ a,
     padding: 0;
 }
 
-.level1 .upper {
+ul {
+    list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    column-gap: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #E5E7EB;
+    margin: 0;
 }
 
 .level1 .lower {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    column-gap: 80px;
+    align-items: center;
+    /* column-gap: 80px; */
+    max-width: 1000px;
 }
 
 .level1 .awesome {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    max-width: 350px;
+    flex: 0 1 auto;
 }
 
 .awesome .title {
     color: #F9FAF8;
     font-size: 48px;
     font-weight: 800;
+}
+
+.awesome p {
+    text-decoration: none;
+    font-size: 18px;
+    color: #E5E7EB;
+    margin: 0;
+    flex: 0 1 auto;
 }
 
 .awesome button {
@@ -85,14 +94,13 @@ a,
 }
 
 .placeholder {
-    background-color: #797a7a;
-    width: 480px;
-    height: 200px;
+    background-color: #69737c;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: none;
+    flex: 0 0 auto;
     margin: 0 10px;
+    padding: 100px 120px;
 }
 
 .level2 {
@@ -101,22 +109,138 @@ a,
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 80px;
 }
 
 .level2 .title {
     font-size: 36px;
     font-weight: 1000;
     color: #1F2937;
+    margin: 30px;
+}
+
+.level2 .segment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    row-gap: 10px;
+}
+
+.level2 .images-subtext {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 60px;
+}
+
+.segment .image {
+    border: 5px solid  #3882F6; 
+    border-radius: 15px;
+    height: 140px;
+    width: 140px;
+}
+
+.segment .text {
+    color: #3f4144;
+    text-align: center;
 }
 
 .level3 {
-    background-color: #E5E7EB
+    background-color: #E5E7EB;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.level3 .quote {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 800px;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #727375;
+    flex: 0 1 auto;
+}
+
+.level3 p {
+    margin: 0;
+}
+
+.quote .signature {
+    align-self: flex-end;
+    font-size: 20px;
+    font-weight: 1000;
+    color: #1F2937;
+    margin: 5px 0;
 }
 
 .level4 {
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.level4 .card {
+    background-color: #3882F6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    padding: 40px 100px;
+    flex: 0 1 auto;
+    column-gap: 200px;
+
+}
+
+.card .text-area {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;    
+}
+
+.text-area .title {
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+.text-area .text {
+    flex: 1;
+}
+
+.card button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border: 3px solid white;
+    font-weight: 800;
+    border-radius: 8px;
+    padding: 8px 25px;
+}
+
+.card button:hover {
+    background-color: #1957b9;
 }
 
 .footer {
-    background-color: #1F2937
+    background-color: #1F2937;
+    color: #F9FAF8;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
 }
