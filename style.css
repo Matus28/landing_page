@@ -13,21 +13,31 @@ body {
     background-color: #1F2937;
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 0;
-    padding: 10px 150px 100px 150px;
+    padding: 10px 0 100px 0;
     color: #E5E7EB;
 }
 
-.level1 .upper {
+.upper-lower {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: space-between;
+    max-width: 1200px;
+}
+
+.upper-lower .upper {
     display: flex;
     flex-wrap: wrap-reverse;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     max-width: 1000px;
     margin-bottom: 80px;
     padding-top: 10px;
 }
 
-.level1 .logo {
+.upper .logo {
     font-size: 24px;
     color: #F9FAF8;
     font-weight: 800;
@@ -50,7 +60,7 @@ a {
     margin: 0;
 }
 
-.level1 .lower {
+.upper-lower .lower {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -59,7 +69,7 @@ a {
     max-width: 1000px;
 }
 
-.level1 .awesome {
+.lower .awesome {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
