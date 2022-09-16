@@ -4,3 +4,5 @@ Creating web page based on The Project Odin curriculum. Focusing on HTML, CSS (F
 + First build basic structure of HTML file and CSS file, devide landing page to main levels and prepare it for Flexbox positioning.
 + Focus on every level of land page, set style using Flexbox model
 + Make changes and configure style to be ready for shrinking, growing
+
++ [https://matus28.github.io/landing_page](https://matus28.github.io/landing_page/ "Link to my website") - Link to my Website
